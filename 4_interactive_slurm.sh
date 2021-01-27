@@ -2,6 +2,7 @@
 
 #Submit a job with the default parameters
 #defaults to debug partition
+sinteractive -h
 sinteractive -A <PROJECT_ACCOUNT>
 #Run command, e.g get hostname
 hostname
