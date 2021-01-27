@@ -8,7 +8,7 @@ sinteractive -A <PROJECT_ACCOUNT>
 hostname
 #Get job status
 squeue -u <userName> # we are on debug partition
-#Relingush job allocation
+#Relinguish job allocation
 exit
 
 ##sinteractive with more arguments
