@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --time=00:10:00
+#SBATCH --time=00:05:00
 #SBATCH --nodes=1 --ntasks-per-node=14  --gpus-per-node=1
 #SBATCH --job-name=partialGPUjob
 #SBATCH --account=PZS0712
