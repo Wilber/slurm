@@ -15,13 +15,13 @@ exit
 sinteractive -h
 sinteractive  -N 1 -n 4  -t 00:10:00  -A <PROJECT_ACCOUNT> -J test -p debug
 squeue -u <userName>
-scontrol show node <node_ID> #4 cpu allocated
+scontrol show node $SLURMD_NODENAME #4 cpu allocated
 exit
 
 #Partial GPU node:
-sinteractive  -N 1 -n 14 -g 1  -t 00:10:00 -p gpuserial -J gpujob -A  <PROJECT_ACCOUNT>
+sinteractive  -N 1 -n 14 -g 1  -t 00:10:00 -J gpujob -A  <PROJECT_ACCOUNT>
 squeue -u <userName>
-scontrol show node <node_ID> #gpu node, 14 CPUs allocated
+scontrol show node $SLURMD_NODENAME #gpu node, 14 CPUs allocated
 exit
 
 ########################################################
