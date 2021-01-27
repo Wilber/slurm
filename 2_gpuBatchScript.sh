@@ -12,6 +12,6 @@ module load cuda
 
 #output goes to the slurm job output file
 echo -e "This is a partial node GPU job:"
-scontrol show node $SLURM_NODENAME
+scontrol show node $SLURMD_NODENAME
 
 sleep 300
