@@ -11,6 +11,7 @@ max_loop <- 100
 ## version 5: use snow backed by Rmpi 
 library(Rmpi)# for mpi.* 
 library(snow) # for clusterExport, clusterApply
+
 workers <- as.numeric(Sys.getenv(c("SLURM_NTASKS")))-1 
 cl <- makeCluster(workers, type="MPI") # MPI tasks to use 
 clusterExport(cl, list('myProc')) 
