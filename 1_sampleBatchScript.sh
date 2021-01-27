@@ -4,12 +4,12 @@
 #SBATCH --job-name=parallelSlurm
 #SBATCH --account=PZS0712
 
-#SLURM starts job in working DIR
+#slurm starts job in working DIR
 cd $SLURM_SUBMIT_DIR
 
 #software licenses syntax
-#SBATCH --licenses={software flag}@osc:N
-#SBATCH --licenses=abaqus@osc:5
+#use: SBATCH --licenses={software flag}@osc:N
+#use: SBATCH --licenses=abaqus@osc:5
 
 
 #set up software environment
