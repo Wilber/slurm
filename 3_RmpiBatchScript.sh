@@ -15,6 +15,7 @@ ml openmpi/1.10.7
 ml mkl/2019.0.5
 ml R/4.0.2
 
-sleep 300
+
 # parallel R: submit job with one MPI parent process
 mpirun -np 1 R --slave < Rmpi.R
+sleep 300
